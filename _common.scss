@@ -1,0 +1,155 @@
+.icon_16x16 {
+    max-width: 16px;
+    max-height: 16px;
+}
+.icon_24x24 {
+    max-width: 24px;
+    max-height: 24px;
+}
+.icon_32x32 {
+    max-width: 32px;
+    max-height: 32px;
+    > svg {
+        width: 100% !important;
+    }
+}
+.icon_48x48 {
+    max-width: 48px;
+    max-height: 48px;
+    > svg {
+        width: 100% !important;
+    }
+}
+
+//FONT
+.fw-thin {
+    font-weight: 100;
+}
+.fw-light {
+    font-weight: 300;
+}
+.fw-medium {
+    font-weight: 500;
+}
+.fw-bold {
+    font-weight: 600;
+}
+.f-upper {
+    text-transform: uppercase;
+}
+.f-capitalize {
+    text-transform: capitalize;
+}
+
+@for $i from 8 to 30 {
+    .fs-#{$i} {
+        font-size: 1px * $i !important;
+    }
+}
+@for $i from 8 to 30 {
+    .line-height-#{$i} {
+        line-height: 1px * $i !important;
+    }
+}
+
+@for $i from 0 through 20 {
+    .margin-#{$i*5} {
+        margin: #{$i * 5}px;
+    }
+    .m-left-#{$i*5} {
+        margin-left: #{$i * 5}px;
+    }
+    .m-top-#{$i*5} {
+        margin-top: #{$i * 5}px;
+    }
+    .m-right-#{$i*5} {
+        margin-right: #{$i * 5}px;
+    }
+    .m-bot-#{$i*5} {
+        margin-bottom: #{$i * 5}px;
+    }
+}
+
+@for $i from 0 through 10 {
+    .padding-#{$i*5} {
+        padding: #{$i * 5}px;
+    }
+    .p-left-#{$i*5} {
+        padding-left: #{$i * 5}px;
+    }
+    .p-top-#{$i*5} {
+        padding-top: #{$i * 5}px;
+    }
+    .p-right-#{$i*5} {
+        padding-right: #{$i * 5}px;
+    }
+    .p-bot-#{$i*5} {
+        padding-bottom: #{$i * 5}px;
+    }
+}
+
+@for $i from 1 through 100 {
+    .width-#{$i*10} {
+        width: #{$i * 10}px;
+    }
+    .flex-width-#{$i*10} {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 #{$i * 10}px;
+        -ms-flex: 0 0 #{$i * 10}px;
+        flex: 0 0 #{$i * 10}px;
+        max-width: #{$i * 10}px;
+        width: #{$i * 10}px;
+    }
+}
+
+@for $i from 1 through 100 {
+    .height-#{$i*10} {
+        height: #{$i * 10}px;
+    }
+    .flex-height-#{$i*10} {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 #{$i * 10}px;
+        -ms-flex: 0 0 #{$i * 10}px;
+        flex: 0 0 #{$i * 10}px;
+        max-height: #{$i * 10}px;
+        height: #{$i * 10}px;
+    }
+}
+
+@for $i from 1 through 20 {
+    .col-#{$i*5}p {
+        width: #{$i * 5%};
+    }
+    .flex-col-#{$i*5} {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 #{$i * 5%};
+        -ms-flex: 0 0 #{$i * 5%};
+        flex: 0 0 #{$i * 5%};
+        max-width: #{$i * 5%};
+        width: #{$i * 5%};
+    }
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.c-prevent{
+    cursor: not-allowed;
+}
+
+.z-index-first {
+    z-index: 9;
+}
+
+.z-index-second {
+    z-index: 99;
+}
+
+.z-index-third {
+    z-index: 999;
+}
+
+.z-index-fourth {
+    z-index: 9999;
+}
